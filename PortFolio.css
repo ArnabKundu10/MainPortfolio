@@ -1,0 +1,48 @@
+.card {
+   position: relative;
+   float: right;
+   width: 20% !important;
+}
+
+.accordion {
+   background-color: black !important;
+
+   position: relative;
+   float: left;
+   width: 78%;
+}
+
+.card-img-top {
+
+   height: 20% !important;
+}
+
+/* @media screen and (max-width:850px) {
+   .accordion {
+      width: 40vw;
+
+
+      /* 3vw */
+/*    }
+
+
+}  */
+@media screen and (max-width:735px) {
+   .accordion {
+      float: none;
+      width: 100vw;
+   }
+
+   .card {
+      float: none;
+      width: 100vw !important;
+   }
+
+   .card-img-top {
+
+      height: 10% !important;
+
+   }
+
+   /* 3vw */
+}
