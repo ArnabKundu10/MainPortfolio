@@ -4,11 +4,24 @@
    width: 20% !important;
 }
 
+#Home:hover {
+   color: rgba(255, 217, 0, 0.884);
+   scale: 1.1 1.4 1.1;
+}
+
+#myskills:hover {
+   scale: 1.1;
+   color: rgba(6, 111, 6, 0.775) !important;
+}
+
+
+
 .accordion {
    background-color: black !important;
 
    position: relative;
    float: left;
+   left: 10px;
    width: 78%;
 }
 
