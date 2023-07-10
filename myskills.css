@@ -1,0 +1,103 @@
+.skills_intro {
+   background-color: black;
+   margin-left: 100px;
+   margin-right: 100px;
+   padding: 8px;
+   font-weight: lighter;
+   font-size: larger;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   border-radius: 5px;
+}
+
+#here_are_skill {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   justify-content: space-between;
+   text-align: center;
+   background-color: white;
+   border-radius: 20px;
+   height: 50px;
+   color: aqua !important;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.linkclr {
+   color: rgba(0, 0, 255, 0.968);
+   text-decoration: dashed;
+
+}
+
+.small_link {
+   background-color: rgba(83, 5, 5, 0.893);
+   padding: 5px;
+   border-radius: 5px;
+}
+
+.small_link:visited {
+   color: rgba(0, 0, 255, 0.932);
+}
+
+.card {
+   position: relative;
+   float: right;
+   width: 20% !important;
+}
+
+#Home:hover {
+   color: rgba(255, 217, 0, 0.884);
+   scale: 1.1 1.4 1.1;
+}
+
+#myskills:hover {
+   scale: 1.1;
+   color: rgba(6, 111, 6, 0.775) !important;
+}
+
+
+
+.accordion {
+   background-color: black !important;
+
+   position: relative;
+   float: left;
+   left: 10px;
+   width: 78%;
+}
+
+.card-img-top {
+
+   height: 20% !important;
+}
+
+/* @media screen and (max-width:850px) {
+   .accordion {
+      width: 40vw;
+
+
+      /* 3vw */
+/*    }
+
+
+}  */
+@media screen and (max-width:735px) {
+   .accordion {
+      float: none;
+      width: 100vw;
+   }
+
+   .card {
+      float: none;
+      width: 100vw !important;
+   }
+
+   .card-img-top {
+
+      height: 10% !important;
+
+   }
+
+   /* 3vw */
+}
