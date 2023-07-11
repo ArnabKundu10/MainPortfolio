@@ -14,6 +14,19 @@
    color: rgba(6, 111, 6, 0.775) !important;
 }
 
+#myskills:visited {
+   color: rgba(47, 255, 64, 0.953)
+}
+
+#foot {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: center;
+   clear: both;
+   padding-top: 100px;
+}
+
 
 
 .accordion {

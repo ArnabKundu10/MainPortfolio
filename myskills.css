@@ -34,6 +34,7 @@
    background-color: rgba(83, 5, 5, 0.893);
    padding: 5px;
    border-radius: 5px;
+   color: aqua !important;
 }
 
 .small_link:visited {
@@ -56,6 +57,17 @@
    color: rgba(6, 111, 6, 0.775) !important;
 }
 
+#myskills:visited {
+   color: rgba(47, 255, 64, 0.953)
+}
+
+#foot {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: center;
+   clear: both;
+}
 
 
 .accordion {
