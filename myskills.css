@@ -11,6 +11,7 @@
 
 #here_are_skill {
    display: flex;
+   flex-wrap: wrap;
    flex-direction: row;
    justify-content: center;
    align-items: center;
@@ -18,7 +19,7 @@
    text-align: center;
    background-color: white;
    border-radius: 20px;
-   height: 50px;
+   min-height: 50px;
    color: aqua !important;
    padding-left: 10px;
    padding-right: 10px;
@@ -27,6 +28,7 @@
 .linkclr {
    color: rgba(0, 0, 255, 0.968);
    text-decoration: dashed;
+   margin: 5px;
 
 }
 

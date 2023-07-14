@@ -4,6 +4,33 @@
    width: 20% !important;
 }
 
+.tbl {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 400px;
+}
+
+th {
+   background-color: rgba(91, 214, 38, 0.967);
+}
+
+td:hover {
+   background-color: rgba(91, 214, 38, 0.967);
+}
+
+table,
+tr,
+th,
+td {
+   padding: 10px 80px 10px 80px;
+   border: 2px solid black;
+   border-collapse: collapse;
+   border-color: rgb(219, 28, 60);
+   text-align: center;
+
+}
+
 .linkedin {
    border-radius: 5px;
 }

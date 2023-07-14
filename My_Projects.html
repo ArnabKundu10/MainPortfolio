@@ -10,10 +10,12 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="myskills.css">
+   <link rel="stylesheet" href="Project.css">
    <style>
       body {
-         background-image: url(BG\ coding\ image\ 1.jpg);
+         background-image: url(bg5.webp);
+         background-size: cover;
+
       }
 
       .dropdown {
@@ -37,6 +39,7 @@
          </button>
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
                <li class="nav-item">
                   <a class="nav-link active" id="myskills" href="MySkillsPage.html">My
                      Skills</a>
@@ -56,79 +59,63 @@
                </li>
             </ul>
             <form class="d-flex" role="search">
-               <input class="form-control me-2" disabled type="search" placeholder="Search" aria-label="Search">
-               <button id="searchbtn" class="btn btn-outline-success" disabled type="submit">Search</button>
+               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+               <button id="searchbtn" class="btn btn-outline-success" type="submit">Search</button>
             </form>
          </div>
       </div>
 
    </nav>
-   <br>
-   <br>
-   <br>
-   <div class="skills_intro" style="text-align: center;">
-      <p><b>Hey! You're welcome to my skills stats page. Click below button to explore it. Thank you</b></p>
-      <br>
-      <a class="small_link" href="#here_are_skill">Explore</a>
+   <div class="tbl">
+      <table>
+         <tr>
+            <th>
+               Project Name
+            </th>
+            <th>
+               Github Repository
+            </th>
+            <th>
+               Link
+            </th>
+         </tr>
+         <tr>
+            <td>
+               My Beginner Portfolio
+            </td>
+            <td>
+               <a href="https://github.com/ArnabKundu10/My_Beginner_Portfolio">GitLink</a>
+            </td>
+            <td>
+               <a href="https://arnabkundu10.github.io/My_Beginner_Portfolio/">WebsiteLink</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               PostOffice Website
+            </td>
+            <td>
+               <a href="https://github.com/ArnabKundu10/PostOffice-Portal-Design">GitLink</a>
+            </td>
+            <td>
+               <a href="https://arnabkundu10.github.io/PostOffice-Portal-Design/">WebsiteLink</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               Contact Information Fill Up
+            </td>
+            <td>
+               GitLink
+            </td>
+            <td>
+               WebsiteLink
+            </td>
+         </tr>
+      </table>
    </div>
    <br>
    <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br> <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br> <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <div id="here_are_skill" style="color: black;">
-      <a class="linkclr" href="#">C</a>
-      <a class="linkclr" href="#">C++</a>
-      <a class="linkclr" href="#">Html</a>
-      <a class="linkclr" href="#">CSS</a>
-      <a class="linkclr" href="#">JavaScipt</a>
-      <a class="linkclr" href="#">Git</a>
-      <a class="linkclr" href="#">Github</a>
-   </div>
-   <br> <br><br><br><br><br><br><br><br><br><br><br>
 
    <div id="foot">
       <a href="https://www.facebook.com/arya.sengupta.714"><img src="FacebookLogo.png" height="50px" width="50px"></a>
@@ -142,8 +129,14 @@
    </div>
 
 
-   <script src="MySkills.js">
+   <script>
+      console.log("hey")
 
+      searchbtn.addEventListener('click', clkfunc);
+      function clkfunc(e) {
+         console.log("hey")
+         console.log(e.currentTarget);
+      }
    </script>
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
