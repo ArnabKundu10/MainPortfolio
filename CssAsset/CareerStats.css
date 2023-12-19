@@ -1,0 +1,283 @@
+.card {
+   position: relative;
+   float: right;
+   width: 20% !important;
+}
+
+.linkedin {
+   border-radius: 5px;
+}
+
+#Home:hover {
+   color: rgba(255, 217, 0, 0.884);
+   scale: 1.1 1.4 1.1;
+}
+
+#myskills:hover {
+   scale: 1.1;
+   color: rgba(6, 111, 6, 0.775) !important;
+}
+
+#myskills:visited {
+   color: rgba(47, 255, 64, 0.953)
+}
+
+#foot {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: center;
+   clear: both;
+   padding-top: 100px;
+}
+
+
+
+.accordion {
+   background-color: black !important;
+
+   position: relative;
+   float: left;
+   left: 10px;
+   width: 78%;
+}
+
+.card-img-top {
+
+   height: 20% !important;
+}
+.homeFirstElement{
+   font-size: 150%;
+   
+}
+.Quotes{
+   margin-top: 5%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 9%;
+}
+.QuotesLine{
+   background-color: green;
+   margin: 1%;
+   padding: 0.5%;
+   font-size: 250%;
+   color: rgba(255, 255, 255, 0.949);
+   opacity: 300%;
+   border: 2px solid  rgba(19, 191, 19, 0.715);
+   border-radius: 14%;
+   transform: rotateZ(-10deg);
+}
+.homeFirstElement::after{
+   content: "Quick Learning";
+   font-size: 150%;
+   font-weight: bolder;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: rgba(19, 191, 19, 0.715);
+   animation: textchange 2.5s linear .2s infinite;
+   
+}
+
+@keyframes textchange {
+   0%{
+      content: "Quick Learning"; 
+   }
+   10%{
+      content: "Mentor"; 
+   }
+   20%{
+      content: "Communication"; 
+   }
+   30%{
+      content: "Hard Work"; 
+   }
+   40%{
+      content: "Intelligence"; 
+   }
+   50%{
+      content: "Game Changer"; 
+   }
+   60%{
+      content: "Social Activity"; 
+   }
+   70%{
+      content: "Team Work"; 
+   }
+   100%{
+      content: "Punctuality"; 
+   }
+   
+}
+
+
+/* @media screen and (max-width:850px) {
+   .accordion {
+      width: 40vw;
+
+
+      /* 3vw */
+/*    }
+
+
+}  */
+@media screen and (max-width:735px) {.card {
+   position: relative;
+   float: right;
+   width: 20% !important;
+}
+
+.linkedin {
+   border-radius: 5px;
+}
+
+#Home:hover {
+   color: rgba(255, 217, 0, 0.884);
+   scale: 1.1 1.4 1.1;
+}
+
+#myskills:hover {
+   scale: 1.1;
+   color: rgba(6, 111, 6, 0.775) !important;
+}
+
+#myskills:visited {
+   color: rgba(47, 255, 64, 0.953)
+}
+
+#foot {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: center;
+   clear: both;
+   padding-top: 100px;
+}
+
+
+
+.accordion {
+   background-color: black !important;
+
+   position: relative;
+   float: left;
+   left: 10px;
+   width: 78%;
+}
+
+.card-img-top {
+
+   height: 20% !important;
+}
+.homeFirstElement{
+   font-size: 150%;
+   
+}
+.Quotes{
+   margin-top: 5%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 9%;
+}
+.QuotesLine{
+   background-color: green;
+   margin: 1%;
+   padding: 0.5%;
+   font-size: 250%;
+   color: rgba(255, 255, 255, 0.949);
+   opacity: 300%;
+   border: 2px solid  rgba(19, 191, 19, 0.715);
+   border-radius: 14%;
+   transform: rotateZ(-10deg);
+}
+.homeFirstElement::after{
+   content: "Quick Learning";
+   font-size: 150%;
+   font-weight: bolder;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: rgba(19, 191, 19, 0.715);
+   animation: textchange 2.5s linear .2s infinite;
+   
+}
+
+@keyframes textchange {
+   0%{
+      content: "Quick Learning"; 
+   }
+   10%{
+      content: "Mentor"; 
+   }
+   20%{
+      content: "Communication"; 
+   }
+   30%{
+      content: "Hard Work"; 
+   }
+   40%{
+      content: "Intelligence"; 
+   }
+   50%{
+      content: "Game Changer"; 
+   }
+   60%{
+      content: "Social Activity"; 
+   }
+   70%{
+      content: "Team Work"; 
+   }
+   100%{
+      content: "Punctuality"; 
+   }
+   
+}
+
+
+/* @media screen and (max-width:850px) {
+   .accordion {
+      width: 40vw;
+
+
+      /* 3vw */
+/*    }
+
+
+}  */
+@media screen and (max-width:735px) {
+   .accordion {
+      float: none;
+      width: 100vw;
+   }
+
+   .card {
+      float: none;
+      width: 100vw !important;
+   }
+
+   .card-img-top {
+
+      height: 10% !important;
+
+   }
+
+   /* 3vw */
+}
+   .accordion {
+      float: none;
+      width: 100vw;
+   }
+
+   .card {
+      float: none;
+      width: 100vw !important;
+   }
+
+   .card-img-top {
+
+      height: 10% !important;
+
+   }
+
+   /* 3vw */
+}
