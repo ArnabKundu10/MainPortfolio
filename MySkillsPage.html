@@ -37,66 +37,8 @@
   </head>
 
   <body class="bg-dark p-2 text-white bg-opacity-80">
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary"
-      class="navbar bg-dark border-bottom border-bottom-dark"
-      style="position: fixed; width: 100%"
-      data-bs-theme="dark"
-    >
-      <div class="container-fluid">
-        <a id="Home" class="navbar-brand" href="index.html">Home</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" id="myskills" href="MySkillsPage.html"
-                >My Skills</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                id="myskills"
-                class="nav-link active"
-                class="navbar-brand"
-                aria-current="page"
-                href="My_Projects.html"
-                >My Projects</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                id="myskills"
-                class="nav-link active"
-                class="navbar-brand"
-                aria-current="page"
-                href="CareerStats.html"
-                >Career Stats</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                id="myskills"
-                class="nav-link active"
-                class="navbar-brand"
-                aria-current="page"
-                href="#foot"
-                >Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div id="header-placeholder"></div>
+
     <br />
     <br />
     <br />
@@ -208,7 +150,7 @@
         </p>
         <p>CLICK TO SEE STATS</p>
       </div>
-      <div class="codePlatform">
+      <div class="codePlatform z-0">
         <a
           href="https://www.codingninjas.com/studio/profile/97bc5090-3110-4250-8496-4542d7e3b389"
           ><img
@@ -222,12 +164,21 @@
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
     <iframe
+      id="foot"
       src="CommonFiles/footer.html"
       width="100%"
       height="400"
       frameborder="0"
     ></iframe>
-
+    <script>
+      fetch("CommonFiles/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          // Inject the content into the placeholder
+          console.log(data);
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+    </script>
     <script src="MySkills.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
