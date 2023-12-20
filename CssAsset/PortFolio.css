@@ -12,6 +12,9 @@
    color: rgba(255, 217, 0, 0.884);
    scale: 1.1 1.4 1.1;
 }
+#Home:visited{
+   color: rgba(255, 217, 0, 0.884); 
+}
 
 #myskills:hover {
    scale: 1.1;
@@ -139,4 +142,9 @@
    }
 
    /* 3vw */
+}
+.activeHead{
+   border-top: 2px solid rgba(19, 191, 19, 0.715);
+   border-bottom: 2px solid rgba(19, 191, 19, 0.715);
+   border-left: 1px solid rgba(245, 245, 245, 0.621);
 }

@@ -43,6 +43,20 @@
           <th>Link</th>
         </tr>
         <tr>
+          <td>Public Registration Portal</td>
+          <td>
+            <a href="https://github.com/ArnabKundu10/Public-Registration-Portal"
+              >GitLink</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://65800035ee55190008f2e2fe--marvelous-crostata-33ed52.netlify.app/"
+              >WebsiteLink</a
+            >
+          </td>
+        </tr>
+        <tr>
           <td>My Beginner Portfolio</td>
           <td>
             <a href="https://github.com/ArnabKundu10/My_Beginner_Portfolio"
@@ -102,7 +116,7 @@
         .then((response) => response.text())
         .then((data) => {
           // Inject the content into the placeholder
-          console.log(data);
+
           document.getElementById("imported-content-placeholder").innerHTML =
             data;
         });
@@ -110,18 +124,13 @@
         .then((response) => response.text())
         .then((data) => {
           // Inject the content into the placeholder
-          console.log(data);
+
           document.getElementById("footer-placeholder").innerHTML = data;
         });
 
       console.log("hey");
-
-      searchbtn.addEventListener("click", clkfunc);
-      function clkfunc(e) {
-        console.log("hey");
-        console.log(e.currentTarget);
-      }
     </script>
+    <script src="JsAsset/head.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

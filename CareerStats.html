@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -21,6 +22,10 @@
     ></script>
     <link rel="stylesheet" href="CssAsset/CareerStats.css" />
     <style>
+      body {
+        background-image: url(ImgAsset/careerBG.jpg);
+        background-size: cover;
+      }
       .dropdown {
         margin-top: 20px;
         margin-left: 100px;
@@ -33,15 +38,94 @@
 
   <body class="bg-dark p-2 text-white bg-opacity-80">
     <div id="imported-content-placeholder"></div>
-
+    <div class="career-container">
+      <div class="career-box rounded" data-aos="fade-right">
+        <div class="text-center z-2">
+          <i class="fa-solid fa-book-open-reader fs-2 p-4 z-2"></i>
+          <p class="fs-5 z-2"><b>2011-2017</b></p>
+        </div>
+        <p class="fs-1 z-2"><b>Secondary Education</b></p>
+        <button
+          onclick="careerOpen(this)"
+          class="w-25 rounded z-2"
+          style="background-color: rgba(255, 238, 0, 0.915)"
+        >
+          <b> Get Details <i class="fa-regular fa-hand-point-down"></i></b>
+        </button>
+        <div style="display: none" class="career-details flex-column fs-4 p-3">
+          <p>School: New Barrackpur Colony Boys High School</p>
+          <p>Board: WBBSE</p>
+          <p>Percentage: 87.29</p>
+        </div>
+      </div>
+      <div class="career-box rounded" data-aos="fade-left">
+        <div class="text-center z-2">
+          <i class="fa-solid fa-book-open-reader fs-2 p-4 z-2"></i>
+          <p class="fs-5"><b>2017-2019</b></p>
+        </div>
+        <p class="fs-1 z-2"><b>Higher Secondary Education</b></p>
+        <button
+          onclick="careerOpen(this)"
+          class="w-25 rounded z-2"
+          style="background-color: rgba(255, 238, 0, 0.915)"
+        >
+          <b> Get Details <i class="fa-regular fa-hand-point-down"></i></b>
+        </button>
+        <div style="display: none" class="career-details flex-column fs-4 p-3">
+          <p>School: New Barrackpur Colony Boys High School</p>
+          <p>Board: WBCHSE</p>
+          <p>Percentage: 85</p>
+        </div>
+      </div>
+      <div class="career-box rounded" data-aos="fade-right" style="clear: both">
+        <div class="text-center z-2">
+          <i class="fa-solid fa-book-open-reader fs-2 p-4"></i>
+          <p class="fs-5"><b>2019-2022</b></p>
+        </div>
+        <p class="fs-1 z-2"><b>Diploma Engineering</b></p>
+        <button
+          onclick="careerOpen(this)"
+          class="w-25 rounded z-2"
+          style="background-color: rgba(255, 238, 0, 0.915)"
+        >
+          <b> Get Details <i class="fa-regular fa-hand-point-down"></i></b>
+        </button>
+        <div style="display: none" class="career-details flex-column fs-4 p-3">
+          <p>College: Belgharia Ramakrishna Mission Shilpapitha</p>
+          <p>Board: Karigari Bhawan</p>
+          <p>Stream: Electrical Engineering</p>
+          <p>CGPA: 8.2</p>
+        </div>
+      </div>
+      <div class="career-box rounded" data-aos="fade-left">
+        <div class="text-center z-2">
+          <i class="fa-solid fa-book-open-reader fs-2 p-4"></i>
+          <p class="fs-5"><b>2022-2025</b></p>
+        </div>
+        <p class="fs-1 z-2"><b>Graduation(BTech Engineering)</b></p>
+        <button
+          onclick="careerOpen(this)"
+          class="w-25 rounded z-2"
+          style="background-color: rgba(255, 238, 0, 0.915)"
+        >
+          <b> Get Details <i class="fa-regular fa-hand-point-down"></i></b>
+        </button>
+        <div style="display: none" class="career-details flex-column fs-4 p-3">
+          <p>College: Kalyani Government Engineering College</p>
+          <p>Board: MAKAUT</p>
+          <p>Stream: Information Technology</p>
+          <p>CGPA: 7.89(Till Now)</p>
+        </div>
+      </div>
+    </div>
     <div id="footer-placeholder"></div>
-    <script src="MyPortfolio.js"></script>
+    <script src="JsAsset/Career.js"></script>
     <script>
       fetch("CommonFiles/header.html")
         .then((response) => response.text())
         .then((data) => {
           // Inject the content into the placeholder
-          console.log(data);
+
           document.getElementById("imported-content-placeholder").innerHTML =
             data;
         });
@@ -49,10 +133,15 @@
         .then((response) => response.text())
         .then((data) => {
           // Inject the content into the placeholder
-          console.log(data);
+
           document.getElementById("footer-placeholder").innerHTML = data;
         });
     </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="JsAsset/head.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
