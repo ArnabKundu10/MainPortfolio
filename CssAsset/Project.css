@@ -9,7 +9,8 @@
    justify-content: center;
    align-items: center;
    height: 400px;
-
+   flex-direction: column;
+   margin-top: 5%;
 }
 
 th {
@@ -28,11 +29,32 @@ td {
    padding: 0.6vw 2.4vw 0.6vw 2.4vw;
    border: 2px solid black;
    border-collapse: collapse;
-   border-color: rgb(219, 28, 60);
+   border-color: rgb(219, 28, 60) !important;
    text-align: center;
    width: 80vw !important;
 }
-
+.career-heading{
+   text-align: center;
+   text-transform: uppercase;
+   color: rgb(219, 28, 60);
+   font-size: 4rem;
+   text-shadow:1px 2px 1px;
+  
+}
+.upArrow{
+   position: fixed;
+   text-align: center;
+   bottom: 2%;
+   right: 2%;
+   height: 80px;
+   width: 80px;
+   background-color: black;
+}
+.fa-arrow-up{
+   margin-top: 20%;
+   font-size: 40px;
+  
+}
 
 
 

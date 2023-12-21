@@ -287,6 +287,39 @@
    margin-right: 10%;
 
 }
+.career-heading{
+   text-align: center;
+   text-transform:capitalize;
+   color: #3e64ff;
+   background-color: rgba(0, 0, 0, 0.897);
+   font-size: 4rem;
+   text-shadow:1px 2px 1px;
+  margin-left: 20%;
+  margin-right: 30%;
+}
+.career-heading-subpart{
+   text-align: center;
+   text-transform: capitalize;
+   color: #3e64ff;
+   font-size: 3rem;
+   text-shadow:1px 2px 1px;
+  margin-left: -10%;
+}
+.fixCareer{
+   position: fixed;
+   display: flex;
+   flex-direction: column;
+   width: 10%;
+   top:50%;
+   right: 5%;
+}
+.subCareer{
+   text-decoration: none;
+   text-align: center;
+   border: 3px solid  black;
+   font-weight: bold;
+   color: #3e64ff;
+}
 .career-box{
    background-color: #3e64ff;
    color-scheme: rgba(251, 247, 247, 0.819);
@@ -306,6 +339,19 @@
    animation-name: upAndDown;
    animation-duration: 1s;
    animation-iteration-count: 1;
+}
+.upArrow{
+   position: fixed;
+   text-align: center;
+   bottom: 2%;
+   right: 2%;
+   height: 80px;
+   width: 80px;
+   background-color: black;
+}
+.fa-arrow-up{
+   margin-top: 20%;
+   font-size: 40px;
 }
 @keyframes upAndDown{
    0%{
@@ -334,7 +380,7 @@
    
    
 }
-.fa-solid{
+.fa-book-open-reader, .fa-building{
    margin-left: 1%;
    background-color: rgba(255, 238, 0, 0.915);
    border-radius: 50%;

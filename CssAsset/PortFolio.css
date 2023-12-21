@@ -81,6 +81,19 @@
    animation: textchange 30s linear .2s infinite;
    
 }
+.upArrow{
+   position: fixed;
+   text-align: center;
+   bottom: 2%;
+   right: 2%;
+   height: 80px;
+   width: 80px;
+   background-color: black;
+}
+.fa-arrow-up{
+   margin-top: 20%;
+   font-size: 40px;
+}
 
 @keyframes textchange {
    0%{
@@ -147,4 +160,18 @@
    border-top: 2px solid rgba(19, 191, 19, 0.715);
    border-bottom: 2px solid rgba(19, 191, 19, 0.715);
    border-left: 1px solid rgba(245, 245, 245, 0.621);
+}
+.ul-nav{
+   display: flex ;
+   list-style-type: none;
+}
+.li-nav{
+   margin-right: 2%;
+   text-align: center;
+}
+.li-nav a{
+   display: block;
+   text-decoration: none;
+   width: 6.5vw !important;
+   text-align: center;
 }

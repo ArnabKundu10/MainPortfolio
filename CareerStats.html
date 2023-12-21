@@ -37,33 +37,137 @@
   </head>
 
   <body class="bg-dark p-2 text-white bg-opacity-80">
+    <div class="upArrow rounded-circle">
+      <a class="upAnchor" href="#imported-content-placeholder"
+        ><i class="fa-solid fa-arrow-up"></i
+      ></a>
+    </div>
     <div id="imported-content-placeholder"></div>
     <div class="career-container">
-      <div class="career-box rounded" data-aos="fade-right">
-        <div class="text-center z-2">
-          <i class="fa-solid fa-book-open-reader fs-2 p-4 z-2"></i>
-          <p class="fs-5 z-2"><b>2011-2017</b></p>
-        </div>
-        <p class="fs-1 z-2"><b>Secondary Education</b></p>
-        <button
-          onclick="careerOpen(this)"
-          class="w-25 rounded z-2"
-          style="background-color: rgba(255, 238, 0, 0.915)"
+      <div class="fixCareer">
+        <a class="subCareer" id="subCareer1" href="#education"
+          >Education Details</a
         >
-          <b> Get Details <i class="fa-regular fa-hand-point-down"></i></b>
-        </button>
-        <div style="display: none" class="career-details flex-column fs-4 p-3">
-          <p>School: New Barrackpur Colony Boys High School</p>
-          <p>Board: WBBSE</p>
-          <p>Percentage: 87.29</p>
+        <a class="subCareer" id="subCareer2" href="#experience">Experience</a>
+      </div>
+      <p class="career-heading rounded"><b>Career Statistics</b></p>
+      <div>
+        <p
+          class="career-heading-subpart"
+          id="education"
+          onscroll="eduCation(this)"
+        >
+          <b>Education Details</b>
+        </p>
+        <div class="career-box rounded" data-aos="fade-right">
+          <div class="text-center z-2">
+            <i class="fa-solid fa-book-open-reader fs-2 p-4 z-2"></i>
+            <p class="fs-5 z-2"><b>2011-2017</b></p>
+          </div>
+          <p class="fs-1 z-2"><b>Secondary Education</b></p>
+          <button
+            onclick="careerOpen(this)"
+            class="w-25 rounded z-2"
+            style="background-color: rgba(255, 238, 0, 0.915)"
+          >
+            <b> Get Details <i class="fa-regular fa-hand-point-down"></i></b>
+          </button>
+          <div
+            style="display: none"
+            class="career-details flex-column fs-4 p-3"
+          >
+            <p>School: New Barrackpur Colony Boys High School</p>
+            <p>Board: WBBSE</p>
+            <p>Percentage: 87.29</p>
+          </div>
+        </div>
+        <div class="career-box rounded" data-aos="fade-left">
+          <div class="text-center z-2">
+            <i class="fa-solid fa-book-open-reader fs-2 p-4 z-2"></i>
+            <p class="fs-5"><b>2017-2019</b></p>
+          </div>
+          <p class="fs-1 z-2"><b>Higher Secondary Education</b></p>
+          <button
+            onclick="careerOpen(this)"
+            class="w-25 rounded z-2"
+            style="background-color: rgba(255, 238, 0, 0.915)"
+          >
+            <b> Get Details <i class="fa-regular fa-hand-point-down"></i></b>
+          </button>
+          <div
+            style="display: none"
+            class="career-details flex-column fs-4 p-3"
+          >
+            <p>School: New Barrackpur Colony Boys High School</p>
+            <p>Board: WBCHSE</p>
+            <p>Percentage: 85</p>
+          </div>
+        </div>
+        <div
+          class="career-box rounded"
+          data-aos="fade-right"
+          style="clear: both"
+        >
+          <div class="text-center z-2">
+            <i class="fa-solid fa-book-open-reader fs-2 p-4"></i>
+            <p class="fs-5"><b>2019-2022</b></p>
+          </div>
+          <p class="fs-1 z-2"><b>Diploma Engineering</b></p>
+          <button
+            onclick="careerOpen(this)"
+            class="w-25 rounded z-2"
+            style="background-color: rgba(255, 238, 0, 0.915)"
+          >
+            <b> Get Details <i class="fa-regular fa-hand-point-down"></i></b>
+          </button>
+          <div
+            style="display: none"
+            class="career-details flex-column fs-4 p-3"
+          >
+            <p>College: Belgharia Ramakrishna Mission Shilpapitha</p>
+            <p>Board: Karigari Bhawan</p>
+            <p>Stream: Electrical Engineering</p>
+            <p>CGPA: 8.2</p>
+          </div>
+        </div>
+        <div class="career-box rounded" data-aos="fade-left">
+          <div class="text-center z-2">
+            <i class="fa-solid fa-book-open-reader fs-2 p-4"></i>
+            <p class="fs-5"><b>2022-2025</b></p>
+          </div>
+          <p class="fs-1 z-2"><b>Graduation(BTech Engineering)</b></p>
+          <button
+            onclick="careerOpen(this)"
+            class="w-25 rounded z-2"
+            style="background-color: rgba(255, 238, 0, 0.915)"
+          >
+            <b> Get Details <i class="fa-regular fa-hand-point-down"></i></b>
+          </button>
+          <div
+            style="display: none"
+            class="career-details flex-column fs-4 p-3"
+          >
+            <p>College: Kalyani Government Engineering College</p>
+            <p>Board: MAKAUT</p>
+            <p>Stream: Information Technology</p>
+            <p>CGPA: 7.89(Till Now)</p>
+          </div>
         </div>
       </div>
-      <div class="career-box rounded" data-aos="fade-left">
+      <br />
+      <p
+        class="career-heading-subpart pt-3"
+        id="experience"
+        style="clear: both"
+      >
+        <b>Experience</b>
+      </p>
+      <div class="career-box rounded" style="left: 22%" data-aos="fade-up">
         <div class="text-center z-2">
-          <i class="fa-solid fa-book-open-reader fs-2 p-4 z-2"></i>
-          <p class="fs-5"><b>2017-2019</b></p>
+          <i class="fa-regular fa-building fs-2 p-4"></i>
+          <p class="fs-5"><b>2023(24th July-31st Oct)</b></p>
         </div>
-        <p class="fs-1 z-2"><b>Higher Secondary Education</b></p>
+        <p class="fs-1 z-2"><b>Webreate (Frontend Web Developer)</b></p>
         <button
           onclick="careerOpen(this)"
           class="w-25 rounded z-2"
@@ -72,49 +176,13 @@
           <b> Get Details <i class="fa-regular fa-hand-point-down"></i></b>
         </button>
         <div style="display: none" class="career-details flex-column fs-4 p-3">
-          <p>School: New Barrackpur Colony Boys High School</p>
-          <p>Board: WBCHSE</p>
-          <p>Percentage: 85</p>
-        </div>
-      </div>
-      <div class="career-box rounded" data-aos="fade-right" style="clear: both">
-        <div class="text-center z-2">
-          <i class="fa-solid fa-book-open-reader fs-2 p-4"></i>
-          <p class="fs-5"><b>2019-2022</b></p>
-        </div>
-        <p class="fs-1 z-2"><b>Diploma Engineering</b></p>
-        <button
-          onclick="careerOpen(this)"
-          class="w-25 rounded z-2"
-          style="background-color: rgba(255, 238, 0, 0.915)"
-        >
-          <b> Get Details <i class="fa-regular fa-hand-point-down"></i></b>
-        </button>
-        <div style="display: none" class="career-details flex-column fs-4 p-3">
-          <p>College: Belgharia Ramakrishna Mission Shilpapitha</p>
-          <p>Board: Karigari Bhawan</p>
-          <p>Stream: Electrical Engineering</p>
-          <p>CGPA: 8.2</p>
-        </div>
-      </div>
-      <div class="career-box rounded" data-aos="fade-left">
-        <div class="text-center z-2">
-          <i class="fa-solid fa-book-open-reader fs-2 p-4"></i>
-          <p class="fs-5"><b>2022-2025</b></p>
-        </div>
-        <p class="fs-1 z-2"><b>Graduation(BTech Engineering)</b></p>
-        <button
-          onclick="careerOpen(this)"
-          class="w-25 rounded z-2"
-          style="background-color: rgba(255, 238, 0, 0.915)"
-        >
-          <b> Get Details <i class="fa-regular fa-hand-point-down"></i></b>
-        </button>
-        <div style="display: none" class="career-details flex-column fs-4 p-3">
-          <p>College: Kalyani Government Engineering College</p>
-          <p>Board: MAKAUT</p>
-          <p>Stream: Information Technology</p>
-          <p>CGPA: 7.89(Till Now)</p>
+          <p>Company Name: Kalyani Government Engineering College</p>
+          <p>Job-Site: Work From Home</p>
+          <p>Time: Part Time</p>
+          <p>Skills: HTML,CSS,JS,REACTJS,</p>
+          <p>BOOTSTRAP,GIT,GITHUB,NODEJS</p>
+          <p>Projects: Engaged with 4 Projects</p>
+          <p>Duration: 3 Months</p>
         </div>
       </div>
     </div>
