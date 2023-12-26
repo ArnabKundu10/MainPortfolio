@@ -10,7 +10,7 @@
    align-items: center;
    height: 400px;
    flex-direction: column;
-   margin-top: 5%;
+   margin-top: 15%;
 }
 
 th {
@@ -127,6 +127,9 @@ td {
 
       height: 10% !important;
 
+   }
+   .career-heading{
+      font-size: 2rem;
    }
 
    /* 3vw */

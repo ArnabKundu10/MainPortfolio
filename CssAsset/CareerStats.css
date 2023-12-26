@@ -244,7 +244,7 @@
 
 
 }  */
-@media screen and (max-width:735px) {
+@media screen and (max-width:770px) {
    .accordion {
       float: none;
       width: 100vw;
@@ -259,25 +259,37 @@
 
       height: 10% !important;
 
+   }
+   .career-box{
+      background-color: #3e64ff;
+      color: rgba(251, 247, 247, 0.819);
+      clear: both;
+      display: flex;
+      width: 70% !important;
+      float: left;
+      flex-direction: column;
+      left:10% !important;
+      margin:1%;
+      padding: 4%;
+   }
+   .career-heading{
+      text-align: center;
+      text-transform:capitalize;
+      color: #3e64ff;
+      background-color: rgba(0, 0, 0, 0.897);
+      font-size: 3rem !important;
+      text-shadow:1px 2px 1px;
+     margin-left: 10% !important;
+     margin-right: 20% !important;
+   }
+   .fixCareer{
+      width: 20% !important;
+      right: 2% !important;
    }
 
    /* 3vw */
 }
-   .accordion {
-      float: none;
-      width: 100vw;
-   }
 
-   .card {
-      float: none;
-      width: 100vw !important;
-   }
-
-   .card-img-top {
-
-      height: 10% !important;
-
-   }
 
    /* 3vw */
 }
@@ -322,7 +334,7 @@
 }
 .career-box{
    background-color: #3e64ff;
-   color-scheme: rgba(251, 247, 247, 0.819);
+   color: rgba(251, 247, 247, 0.819);
    position: relative;
    display: flex;
    width: 40%;

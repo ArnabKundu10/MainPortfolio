@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,25 +25,15 @@
 </head>
 
 <body class="bg-dark p-2 text-white bg-opacity-80 ">
-   <div class="upArrow rounded-circle">
+   <div class="upArrow z-3 rounded-circle">
       <a class="upAnchor" href="#imported-content-placeholder"
         ><i class="fa-solid fa-arrow-up"></i
       ></a>
     </div>
    <!-- <iframe src="CommonFiles/header.html" width="100%" height="55vh" frameborder="0"></iframe> -->
    <div id="imported-content-placeholder"></div>
-   <!--  <div class="dropdown">
-      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-         aria-expanded="false">
-         Dropdown link
-      </a>
-
-      <ul class="dropdown-menu">
-         <li><a class="dropdown-item" href="#">Action</a></li>
-         <li><a class="dropdown-item" href="#">Another action</a></li>
-         <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul> -->
-   <div class="card mt-5" style="width: 15rem;margin-top: 4% !important;">
+   
+   <div class="card" data-aos="fade-right" style="width: 15rem;margin-top: 4% ;">
       <img src="ImgAsset/MyProfilePhoto.jpg" style="padding: 4px;" class="card-img-top" alt="image is not available">
       <div class="card-body">
          <h4 class="card-title" style="font-weight: bold;">ARNAB KUNDU</h5>
@@ -60,16 +51,16 @@
    </div>
       
    <div class="Quotes">
-   <div class="QuotesLine mb-4" style=" transform: rotateZ(-10deg);">
+   <div class="QuotesLine mb-4" data-aos="fade-zoom-in" style=" transform: rotateZ(-10deg);">
       Never Give Up !
    </div>
-   <div class="QuotesLine mb-9" style=" transform: rotateZ(10deg);margin-bottom: 5% ;">
+   <div class="QuotesLine mb-9" data-aos="fade-up" style=" transform: rotateZ(10deg);margin-bottom: 5% ;">
       Face the <i>Fear</i> to kill the <i>Fear</i> !
    </div>
-   <div class="QuotesLine" style=" transform: rotateZ(-10deg);margin-bottom: 4% ;">
+   <div class="QuotesLine" data-aos="fade-right" style=" transform: rotateZ(-10deg);margin-bottom: 4% ;">
       Its not always what to <i> Learn</i> but how to <i>Learn</i> !
    </div>
-   <div class="QuotesLine" style=" transform: rotateZ(10deg);">
+   <div class="QuotesLine" data-aos="fade-left" style=" transform: rotateZ(10deg);">
       Don't afraid of <i>Problems</i> !
    </div>
 </div>
@@ -140,7 +131,12 @@
           document.getElementById("footer-placeholder").innerHTML = data;
         });
 </script>
+
 <script src="JsAsset/head.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
    <script src="JsAsset/MyPortfolio.js">
       
    </script>

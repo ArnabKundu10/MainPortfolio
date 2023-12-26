@@ -29,12 +29,15 @@
 .career-heading{
    text-align: center;
    text-transform: uppercase;
-   margin-left: 34%;
-   margin-right: 34%;
+    margin-left: 24%;
+   margin-right: 24%;
+   padding-left: 3%;
+   padding-right: 2%;
    font-size: 4rem;
    text-shadow:1px 2px 1px;
    color: rgba(0, 0, 255, 0.968);
    background-color: black;
+   
 }
 .codingPlatformStates{
    color: rgba(0, 0, 255, 0.968);
@@ -122,7 +125,7 @@
 @keyframes hanging{
 
    0%{
-     transform: rotate(35deg);
+     transform: rotate(25deg);
      left: -10%;    
      top: -5%;
    }
@@ -133,7 +136,7 @@
      
    }
    50%{
-      transform: rotate(-35deg);
+      transform: rotate(-25deg);
       left: 10%;
      top: -5%;
    }
@@ -144,7 +147,7 @@
      
    }
    100%{
-      transform: rotate(35deg); 
+      transform: rotate(25deg); 
       left: -10%;    
      top: -5%; 
     }
@@ -161,7 +164,7 @@
 
 
 }  */
-@media screen and (max-width:735px) {
+@media screen and (max-width:770px) {
    .accordion {
       float: none;
       width: 100vw;
@@ -177,6 +180,12 @@
       height: 10% !important;
 
    }
+   .career-heading{
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size: 2rem;
+   }
 
    /* 3vw */
 }
+/* Responsiveness */
