@@ -148,7 +148,7 @@ body{
 @media screen and (max-width:735px) {
    .accordion {
       float: none;
-      width: 100vw;
+      width: 90vw;
    }
 
    .card {
@@ -168,6 +168,16 @@ body{
    }
    .NavBtn{
       display: block !important;
+   }
+   .upArrow{
+      height: 60px;
+      width: 60px;
+      
+   }
+   .fa-arrow-up{
+      margin-top: 20%;
+      font-size: 30px;
+   
    }
 
    /* 3vw */
@@ -212,7 +222,7 @@ body{
    background: 0 0;
 }
 .NavItems :hover{
-   background-color: black;
+   background-color: black !important;
 }
 .NavBtn{
    width: 13%;

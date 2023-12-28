@@ -23,14 +23,31 @@ window.onscroll = function () {
   myFunction();
 };
 function myFunction() {
-  if (
-    document.body.scrollTop > 1000 ||
-    document.documentElement.scrollTop > 1000
-  ) {
-    document.getElementById("subCareer2").style.backgroundColor = "black";
-    document.getElementById("subCareer1").style.backgroundColor = "transparent";
+  if (window.innerWidth > 770) {
+    if (
+      document.body.scrollTop > 900 ||
+      document.documentElement.scrollTop > 900
+    ) {
+      document.getElementById("subCareer2").style.backgroundColor = "black";
+      document.getElementById("subCareer1").style.backgroundColor =
+        "transparent";
+    } else {
+      document.getElementById("subCareer1").style.backgroundColor = "black";
+      document.getElementById("subCareer2").style.backgroundColor =
+        "transparent";
+    }
   } else {
-    document.getElementById("subCareer1").style.backgroundColor = "black";
-    document.getElementById("subCareer2").style.backgroundColor = "transparent";
+    if (
+      document.body.scrollTop > 1350 ||
+      document.documentElement.scrollTop > 1350
+    ) {
+      document.getElementById("subCareer2").style.backgroundColor = "black";
+      document.getElementById("subCareer1").style.backgroundColor =
+        "transparent";
+    } else {
+      document.getElementById("subCareer1").style.backgroundColor = "black";
+      document.getElementById("subCareer2").style.backgroundColor =
+        "transparent";
+    }
   }
 }
