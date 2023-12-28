@@ -1,6 +1,8 @@
 body{
-   overflow-x: hidden;
+   overflow-x: hidden !important;
+  
 }
+
 .card {
    position: relative;
    float: right;
@@ -63,6 +65,8 @@ body{
    justify-content: center;
    align-items: center;
    margin-bottom: 9%;
+   overflow-x: hidden;
+   overflow-y: hidden;
 }
 .QuotesLine{
    background-color: green;
@@ -96,6 +100,7 @@ body{
 .fa-arrow-up{
    margin-top: 20%;
    font-size: 40px;
+
 }
 
 @keyframes textchange {
@@ -158,6 +163,12 @@ body{
       height: 10% !important;
 
    }
+   #ItemRow{
+      display: none !important;
+   }
+   .NavBtn{
+      display: block !important;
+   }
 
    /* 3vw */
 }
@@ -179,4 +190,34 @@ body{
    text-decoration: none;
    width: 6.5vw !important;
    text-align: center;
+}
+.NavContainer{
+        position: fixed !important;
+        width: 98.5% !important;
+        line-height: 1;
+        background: linear-gradient(to right, rgba(120, 118, 118, 0.92), rgba(0, 0, 0, 0.863),rgba(120, 118, 118, 0.92));
+        /* background-color: rgba(120, 118, 118, 0.92) !important; */
+        overflow-x: hidden !important;
+}
+.NavItems{
+   margin-left: 2%;
+   list-style-type:none;
+   
+}
+.NavAnchor{
+   color: rgba(47, 255, 64, 0.953);
+   text-decoration: none !important;
+   font-size: 1.3rem;
+   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+   background: 0 0;
+}
+.NavItems :hover{
+   background-color: black;
+}
+.NavBtn{
+   width: 13%;
+  
+}
+.NavUl{
+   margin-bottom: 1px solid black;
 }
