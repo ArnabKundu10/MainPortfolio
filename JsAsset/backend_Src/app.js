@@ -4,14 +4,19 @@ require("../connectionFolder/connectionFile");
 // const mainRouter = require("./router/route");
 const Message = require("../model/scema");
 
-const myPath = path.join(__dirname, "../../../Main_Portfolio_Git");
-console.log(myPath);
+const indexPath = path.join(__dirname, "../../public/index");
+const skillPath = path.join(__dirname, "../../public/Skills");
+const projectPath = path.join(__dirname, "../../public/Projects");
+const careerPath = path.join(__dirname, "../../public/Career");
+console.log(skillPath);
 const port = process.env.port || 5500;
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use("/index", express.static(myPath));
-app.use("/index", express.static(myPath));
+app.use("/index", express.static(indexPath));
+app.use("/skills", express.static(skillPath));
+app.use("/projects", express.static(projectPath));
+app.use("/career", express.static(careerPath));
 app.post("/index", async (req, res) => {
   try {
     const messageData = new Message({
