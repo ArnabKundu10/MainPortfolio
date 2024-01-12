@@ -1,0 +1,25 @@
+{
+  "name": "main_portfolio-git",
+  "version": "1.0.0",
+  "description": "MainPortfolio Work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Arnab Kundu",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArnabKundu10/MainPortfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArnabKundu10/MainPortfolio/issues"
+  },
+  "homepage": "https://github.com/ArnabKundu10/MainPortfolio#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.4",
+    "validator": "^13.11.0"
+  }
+}
