@@ -1,0 +1,255 @@
+body{
+   overflow-x: hidden !important;
+  
+}
+.headerLogo{
+   height: 60px;
+   border:1px solid goldenrod;
+   margin-top: -16px !important;
+   margin-bottom: -16px;
+}
+.card {
+   position: relative;
+   float: right;
+   width: 20% !important;
+}
+
+.linkedin {
+   border-radius: 5px;
+}
+
+#Home:hover {
+   color: rgba(255, 217, 0, 0.884);
+   scale: 1.1 1.4 1.1;
+}
+#Home:visited{
+   color: rgba(255, 217, 0, 0.884); 
+}
+
+#myskills:hover {
+   scale: 1.1;
+   color: rgba(6, 111, 6, 0.775) !important;
+}
+
+#myskills:visited {
+   color: rgba(47, 255, 64, 0.953)
+}
+
+#foot {
+   display: flex;
+   flex-direction: column;
+   background-image: url(../ImgAsset/footer_msg_main.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   padding-left: 25%;
+   padding-right: 25%;
+   width: 100%;
+   justify-content: center;
+   clear: both;
+   padding-top: 100px;
+}
+
+
+
+.accordion {
+   background-color: black !important;
+   position: relative;
+   float: left;
+   left: 10px;
+   width: 78%;
+}
+
+.card-img-top {
+
+   height: 20% !important;
+}
+.homeFirstElement{
+   font-size: 150%;
+   
+}
+.Quotes{
+   margin-top: 5%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 9%;
+   overflow-x: hidden;
+   overflow-y: hidden;
+}
+.QuotesLine{
+   background-color: green;
+   margin: 1%;
+   padding: 0.5%;
+   font-size: 250%;
+   color: rgba(255, 255, 255, 0.949);
+   opacity: 300%;
+   border: 2px solid  goldenrod;
+   border-radius: 14%;
+   transform: rotateZ(-10deg);
+}
+.homeFirstElement::after{
+   content: "Quick Learning";
+   font-weight: bolder;
+   border: 2px solid goldenrod;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: rgba(19, 191, 19, 0.715);
+   animation: textchange 30s linear .2s infinite;
+   
+}
+.accordion-button{
+   background: linear-gradient(to right, goldenrod,white) !important;
+}
+
+.upArrow{
+   position: fixed;
+   text-align: center;
+   bottom: 2%;
+   right: 2%;
+   height: 80px;
+   width: 80px;
+   background-color: black;
+}
+.fa-arrow-up{
+   margin-top: 20%;
+   font-size: 40px;
+
+}
+
+@keyframes textchange {
+   0%{
+      content: "Quick Learning"; 
+   }
+   10%{
+      content: "Mentor"; 
+   }
+   20%{
+      content: "Communication"; 
+   }
+   30%{
+      content: "Hard Work"; 
+   }
+   40%{
+      content: "Intelligence"; 
+   }
+   50%{
+      content: "Game Changer"; 
+   }
+   60%{
+      content: "Social Activity"; 
+   }
+   70%{
+      content: "Team Work"; 
+   }
+   100%{
+      content: "Punctuality"; 
+   }
+   
+}
+
+
+
+@media screen and (max-width:735px) {
+   .accordion {
+      float: none;
+      width: 90vw;
+   }
+
+   .card {
+      float: none;
+      width: 50vw !important;
+      margin-top: 15% !important;
+      left: 23%;
+   }
+
+   .card-img-top {
+
+      height: 10% !important;
+
+   }
+   #ItemRow{
+      display: none !important;
+   }
+   .NavBtn{
+      display: block !important;
+   }
+   .upArrow{
+      height: 60px;
+      width: 60px;
+      
+   }
+   .fa-arrow-up{
+      margin-top: 20%;
+      font-size: 30px;
+   
+   }
+
+   /* 3vw */
+}
+.activeHead{
+   border-top: 2px solid rgba(19, 191, 19, 0.715);
+   border-bottom: 2px solid rgba(19, 191, 19, 0.715);
+   border-left: 1px solid rgba(245, 245, 245, 0.621);
+}
+.ul-nav{
+   display: flex ;
+   list-style-type: none;
+}
+.li-nav{
+   margin-right: 2%;
+   text-align: center;
+}
+.li-nav a{
+   display: block;
+   text-decoration: none;
+   width: 6.5vw !important;
+   text-align: center;
+}
+.NavContainer{
+        position: fixed !important;
+        margin-left: -7px;
+        width: 100%;
+        line-height: 1;
+        background: linear-gradient(to right, rgba(120, 118, 118, 0.92), rgba(0, 0, 0, 0.863),rgba(120, 118, 118, 0.92));
+        /* background-color: rgba(120, 118, 118, 0.92) !important; */
+        overflow-x: hidden !important;
+}
+.NavItems{
+   margin-left: 2%;
+   list-style-type:none;
+   
+}
+.NavAnchor{
+   color: rgba(47, 255, 64, 0.953);
+   text-decoration: none !important;
+   font-size: 1.3rem;
+   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+   background: 0 0;
+}
+.NavItems :hover{
+   background-color: black !important;
+}
+.NavBtn{
+   width: 60px;
+   border-color: goldenrod;
+   margin-top: -9px;
+   margin-bottom: -7px;
+   margin-right: -5px;
+   color: goldenrod;
+   background: linear-gradient(to right, black, transparent,black, transparent,black);
+}
+.NavUl{
+   margin-bottom: 1px solid black;
+}
+#ItemColumn{
+   animation: 0.2s linear 0s 1 normal SlideNav;
+}
+@keyframes SlideNav {
+   0%{
+      transform: translateY(-100%);
+   }
+   100%{
+      transform: translateY(0%); 
+   }
+}

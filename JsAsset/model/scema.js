@@ -5,7 +5,6 @@ const messageStructure = new mongoose.Schema({
   FirstName: {
     type: String,
     uppercase: true,
-    unique: true,
   },
   LastName: {
     type: String,
