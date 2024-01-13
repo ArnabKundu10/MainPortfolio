@@ -13,7 +13,7 @@ const port = process.env.port || 5500;
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use("/index", express.static(indexPath));
+app.use("/", express.static(indexPath));
 app.use("/skills", express.static(skillPath));
 app.use("/projects", express.static(projectPath));
 app.use("/career", express.static(careerPath));
