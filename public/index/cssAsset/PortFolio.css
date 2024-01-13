@@ -101,9 +101,7 @@ body{
 .accordion-button{
    background: linear-gradient(to right, goldenrod,white) !important;
 }
-.accordion-body{
 
-}
 .upArrow{
    position: fixed;
    text-align: center;
@@ -151,16 +149,7 @@ body{
 }
 
 
-/* @media screen and (max-width:850px) {
-   .accordion {
-      width: 40vw;
 
-
-      /* 3vw */
-/*    }
-
-
-}  */
 @media screen and (max-width:735px) {
    .accordion {
       float: none;
