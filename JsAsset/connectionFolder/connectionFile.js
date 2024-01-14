@@ -1,10 +1,11 @@
 const mongoose = require("mongoose");
-
+const password = encodeURIComponent("Arnab12@");
+const DB = `mongodb+srv://Arnab:${password}@atlascluster.esd35xx.mongodb.net/portfolioWebsite?retryWrites=true&w=majority`;
 mongoose
-  .connect("mongodb://127.0.0.1:27017/MyPortFolio")
+  .connect(DB)
   .then(() => {
-    console.log("connected");
+    console.log("Atlas is connected");
   })
-  .catch((err) => {
-    console.log(err);
+  .catch((error) => {
+    console.log(`there might be some error:-${error}`);
   });

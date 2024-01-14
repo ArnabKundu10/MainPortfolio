@@ -8,7 +8,7 @@ const messageStructure = new mongoose.Schema({
   },
   LastName: {
     type: String,
-    lowercase: true,
+    uppercase: true,
   },
   MobileNo: {
     type: Number,
