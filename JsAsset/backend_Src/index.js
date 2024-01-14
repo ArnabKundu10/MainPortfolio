@@ -27,16 +27,18 @@ app.post("/index", async (req, res) => {
       CollegeName: req.body.CollegeName,
       MainMessage: req.body.Message,
     });
-    let data;
-    if (messageData) {
-      data = await messageData.save();
-    } else {
-      console.log("empty data present");
-    }
-    if (data) {
-      console.log(data);
-      res.status(201).send(messageData);
-    }
+    const data = await messageData
+      .save()
+      .then(() => {
+        res.status(201).json({ message: "user registered successfully" });
+        console.log("data successfully posted");
+      })
+      .catch((error) => {
+        res.status(404).json(error);
+        console.log("there is an error");
+      });
+    console.log(data);
+    res.status(200).send(data);
   } catch (error) {
     console.log(error);
     res.status(404).send(error);
