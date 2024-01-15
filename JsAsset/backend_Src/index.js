@@ -2,15 +2,26 @@ const express = require("express");
 const mongoose = require("mongoose");
 
 const path = require("path");
-require("../connectionFolder/connectionFile");
+// require("../connectionFolder/connectionFile");
+const password = encodeURIComponent("Arnab12@");
+console.log(password);
+const DB = `mongodb+srv://Arnab:${password}@atlascluster.esd35xx.mongodb.net/portfolioWebsite?retryWrites=true&w=majority`;
+const connectDB = async () => {
+  try {
+    const conn = await mongoose.connect(DB);
+    console.log(`MongoDB Connected: ${conn.connection.host}`);
+  } catch (error) {
+    console.log(error);
+    process.exit(1);
+  }
+};
 // const mainRouter = require("./router/route");
 const Message = require("../model/scema");
 const indexPath = path.join(__dirname, "../../public/index");
 const skillPath = path.join(__dirname, "../../public/Skills");
 const projectPath = path.join(__dirname, "../../public/Projects");
 const careerPath = path.join(__dirname, "../../public/Career");
-console.log(skillPath);
-const port = process.env.port || 5500;
+const PORT = process.env.PORT || 5500;
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -37,13 +48,16 @@ app.post("/index", async (req, res) => {
         res.status(404).json(error);
         console.log("there is an error");
       });
-    console.log(data);
-    res.status(200).send(data);
   } catch (error) {
     console.log(error);
     res.status(404).send(error);
   }
 });
-app.listen(port, () => {
-  console.log(`connect with port ${port}`);
+// app.listen(PORT, () => {
+//   console.log(`listening for requests:${PORT}`);
+// });
+connectDB().then(() => {
+  app.listen(PORT, () => {
+    console.log("listening for requests");
+  });
 });

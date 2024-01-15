@@ -36,6 +36,16 @@ function myFunction() {
       document.getElementById("subCareer2").style.backgroundColor =
         "transparent";
     }
+    const fixCareer = document.getElementsByClassName("fixCareer");
+
+    if (
+      document.body.scrollTop > 1420 ||
+      document.documentElement.scrollTop > 1420
+    ) {
+      fixCareer[0].style.display = "none";
+    } else {
+      fixCareer[0].style.display = "flex";
+    }
   } else {
     if (
       document.body.scrollTop > 1350 ||
@@ -48,6 +58,15 @@ function myFunction() {
       document.getElementById("subCareer1").style.backgroundColor = "black";
       document.getElementById("subCareer2").style.backgroundColor =
         "transparent";
+    }
+    const fixCareer = document.getElementsByClassName("fixCareer");
+    if (
+      document.body.scrollTop > 1700 ||
+      document.documentElement.scrollTop > 1700
+    ) {
+      fixCareer[0].style.display = "none";
+    } else {
+      fixCareer[0].style.display = "flex";
     }
   }
 }

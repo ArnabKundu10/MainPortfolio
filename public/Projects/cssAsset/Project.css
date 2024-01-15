@@ -10,7 +10,7 @@
    align-items: center;
    height: 400px;
    flex-direction: column;
-   margin-top: 15%;
+   margin-top: 10%;
 }
 
 th {
@@ -101,7 +101,9 @@ td {
 
    height: 20% !important;
 }
-
+.careerBtn{
+   
+}
 /* @media screen and (max-width:850px) {
    .accordion {
       width: 40vw;
@@ -131,6 +133,8 @@ td {
    .career-heading{
       font-size: 2rem;
    }
-
+   .tbl{
+      margin-top: 25%;
+   }
    /* 3vw */
 }
