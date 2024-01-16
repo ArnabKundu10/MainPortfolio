@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 
 const path = require("path");
+// just check
 // require("../connectionFolder/connectionFile");
 const password = encodeURIComponent("Arnab12@");
 console.log(password);
