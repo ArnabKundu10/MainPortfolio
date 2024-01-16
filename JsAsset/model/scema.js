@@ -5,11 +5,10 @@ const messageStructure = new mongoose.Schema({
   FirstName: {
     type: String,
     uppercase: true,
-    unique: true,
   },
   LastName: {
     type: String,
-    lowercase: true,
+    uppercase: true,
   },
   MobileNo: {
     type: Number,

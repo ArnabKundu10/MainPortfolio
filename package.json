@@ -4,7 +4,8 @@
   "description": "MainPortfolio Work",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node JsAsset/backend_Src/index.js"
   },
   "keywords": [],
   "author": "Arnab Kundu",

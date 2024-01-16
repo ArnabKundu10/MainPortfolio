@@ -1,0 +1,140 @@
+.card {
+   position: relative;
+   float: right;
+   width: 20% !important;
+}
+
+.tbl {
+   display: flex !important;
+   justify-content: center;
+   align-items: center;
+   height: 400px;
+   flex-direction: column;
+   margin-top: 10%;
+}
+
+th {
+   background-color: rgba(91, 214, 38, 0.967);
+}
+
+td:hover {
+   background-color: rgba(91, 214, 38, 0.967);
+}
+
+table,
+tr,
+th,
+td {
+
+   padding: 0.6vw 2.4vw 0.6vw 2.4vw;
+   border: 2px solid black;
+   border-collapse: collapse;
+   border-color: rgb(219, 28, 60) !important;
+   text-align: center;
+   width: 80vw !important;
+}
+.career-heading{
+   text-align: center;
+   text-transform: uppercase;
+   color: rgb(219, 28, 60);
+   font-size: 4rem;
+   text-shadow:1px 2px 1px;
+  
+}
+.upArrow{
+   position: fixed;
+   text-align: center;
+   bottom: 2%;
+   right: 2%;
+   height: 80px;
+   width: 80px;
+   background-color: black;
+}
+.fa-arrow-up{
+   margin-top: 20%;
+   font-size: 40px;
+  
+}
+
+
+
+
+.linkedin {
+   border-radius: 5px;
+}
+
+#Home:hover {
+   color: rgba(255, 217, 0, 0.884);
+   scale: 1.1 1.4 1.1;
+}
+
+#myskills:hover {
+   scale: 1.1;
+   color: rgba(6, 111, 6, 0.775) !important;
+}
+
+#myskills:visited {
+   color: rgba(47, 255, 64, 0.953)
+}
+
+#foot {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: center;
+   clear: both;
+   padding-top: 100px;
+}
+
+
+
+.accordion {
+   background-color: black !important;
+
+   position: relative;
+   float: left;
+   left: 10px;
+   width: 78%;
+}
+
+.card-img-top {
+
+   height: 20% !important;
+}
+.careerBtn{
+   
+}
+/* @media screen and (max-width:850px) {
+   .accordion {
+      width: 40vw;
+
+
+      /* 3vw */
+/*    }
+
+
+}  */
+@media screen and (max-width:735px) {
+   .accordion {
+      float: none;
+      width: 100vw;
+   }
+
+   .card {
+      float: none;
+      width: 100vw !important;
+   }
+
+   .card-img-top {
+
+      height: 10% !important;
+
+   }
+   .career-heading{
+      font-size: 2rem;
+   }
+   .tbl{
+      margin-top: 25%;
+   }
+   /* 3vw */
+}

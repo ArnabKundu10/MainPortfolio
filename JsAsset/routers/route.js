@@ -1,7 +1,7 @@
 const express = require("express");
 const route = new express.Router();
 const Movie = require("../model/scema");
-route.get("/movies/:name", async (req, res) => {
+route.get("/index/:name", async (req, res) => {
   try {
     const name = req.params.name;
     console.log(name);
@@ -12,7 +12,7 @@ route.get("/movies/:name", async (req, res) => {
     res.send(err);
   }
 });
-route.get("/movies", async (req, res) => {
+route.get("/index", async (req, res) => {
   try {
     const findMovie = await Movie.find({ publish_year: { $gte: 2000 } });
     res.send(findMovie);
@@ -21,7 +21,7 @@ route.get("/movies", async (req, res) => {
     res.send(err);
   }
 });
-route.post("/movies", async (req, res) => {
+route.post("/index", async (req, res) => {
   try {
     const movieCollector = new Movie(req.body);
     movieCollector.save();
@@ -32,7 +32,7 @@ route.post("/movies", async (req, res) => {
     res.status(404).send(err);
   }
 });
-route.patch("/movies/:id", async (req, res) => {
+route.patch("/index/:id", async (req, res) => {
   try {
     const _id = req.params.id;
     console.log(_id);
@@ -45,7 +45,7 @@ route.patch("/movies/:id", async (req, res) => {
     res.status(404).send(err);
   }
 });
-route.delete("/movies/:id", async (req, res) => {
+route.delete("/index/:id", async (req, res) => {
   try {
     const _id = req.params.id;
     console.log(_id);
