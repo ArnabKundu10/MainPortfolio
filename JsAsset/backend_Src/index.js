@@ -54,6 +54,14 @@ app.post("/index", async (req, res) => {
     res.status(404).send(error);
   }
 });
+app.get("/index", async (req, res) => {
+  try {
+    const findMovie = await Message.find();
+    res.status(201).json(findMovie);
+  } catch (error) {
+    res.status(404).send(error);
+  }
+});
 // app.listen(PORT, () => {
 //   console.log(`listening for requests:${PORT}`);
 // });
