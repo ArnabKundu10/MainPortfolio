@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-
+const cors = require("cors");
 const path = require("path");
 // just check
 // require("../connectionFolder/connectionFile");
@@ -26,6 +26,7 @@ const PORT = process.env.PORT || 5500;
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cors());
 app.use("/", express.static(indexPath));
 app.use("/skills", express.static(skillPath));
 app.use("/projects", express.static(projectPath));
