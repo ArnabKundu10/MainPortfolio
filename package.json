@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ArnabKundu10/MainPortfolio#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.2",
     "mongoose": "^8.0.4",
     "validator": "^13.11.0"
