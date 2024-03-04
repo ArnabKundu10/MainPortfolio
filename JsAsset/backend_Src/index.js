@@ -22,7 +22,7 @@ const indexPath = path.join(__dirname, "../../public/index");
 const skillPath = path.join(__dirname, "../../public/Skills");
 const projectPath = path.join(__dirname, "../../public/Projects");
 const careerPath = path.join(__dirname, "../../public/Career");
-const PORT = process.env.PORT || 5500;
+const PORT = process.env.PORT || 5000;
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

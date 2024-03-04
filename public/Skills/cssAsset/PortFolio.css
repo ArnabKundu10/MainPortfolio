@@ -241,7 +241,7 @@ body{
    
 }
 .NavAnchor{
-   color: rgba(47, 255, 64, 0.953);
+   color: goldenrod;
    text-decoration: none !important;
    font-size: 1.3rem;
    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
