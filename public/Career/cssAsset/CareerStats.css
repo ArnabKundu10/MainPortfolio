@@ -321,18 +321,21 @@
    position: fixed;
    display: flex;
    flex-direction: column;
-   align-items: center;
-   justify-content: space-between;
    width: 10%;
    top:50%;
    right: 5%;
-   height: 110px;
+   word-wrap: break-word;
+   /* height: 110px; */
    border-left:3px solid #3e64ff;
+} 
+.fixCareer p{
+   word-wrap: break-word !important;
+   overflow-wrap: break-word;
 }
 .subCareer{
    text-decoration: none;
    text-align: center;
-  
+   word-wrap: break-word !important;
    font-weight: bold;
    color: #3e64ff;
 }

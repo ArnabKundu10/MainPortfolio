@@ -27,11 +27,11 @@ th,
 td {
 
    padding: 0.6vw 2.4vw 0.6vw 2.4vw;
-   border: 2px solid black;
+   border: 2px solid rgb(219, 28, 60) !important;
    border-collapse: collapse;
-   border-color: rgb(219, 28, 60) !important;
    text-align: center;
    width: 80vw !important;
+   transition: all 0.5s ease-in-out !important;
 }
 .career-heading{
    text-align: center;
@@ -100,9 +100,6 @@ td {
 .card-img-top {
 
    height: 20% !important;
-}
-.careerBtn{
-   
 }
 /* @media screen and (max-width:850px) {
    .accordion {
