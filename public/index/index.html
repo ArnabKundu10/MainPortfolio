@@ -33,10 +33,10 @@
     </div>
    <!-- <iframe src="CommonFiles/header.html" width="100%" height="55vh" frameborder="0"></iframe> -->
    <div id="imported-content-placeholder"></div>
-   <div class="MyDetails">
-
-
-   <div class="card" data-aos="fade-right" style="width: 15rem;margin-top: 4% ;">
+   <div class="my-details d-flex flex-column w-100 mt-5">
+   <div class="w-100 d-flex justify-content-between align-items-center">
+      <div class="background-line1 align-self-center"></div>
+   <div class="card" style="width: 50% !important;margin-top: 4% ;">
       <img src="ImgAsset/MyProfilePhoto.jpg" style="padding: 4px;" class="card-img-top" alt="image is not available">
       <div class="card-body">
          <h4 class="card-title" style="font-weight: bold;">ARNAB KUNDU</h5>
@@ -46,28 +46,116 @@
             <a href="ImgAsset/ArnabCV.pdf" class="btn btn-success fw-bold text-warning" >Check My Resume</a>
       </div>
    </div>
+   <div class="background-line2 align-self-center"></div>
+</div>
+   <div id="intro" class="intro text-center ms-5 me-5">
    <p style="margin-top: 60px;" class="fs-2 text-uppercase" ><b>I am widely recognized for certain qualities, including... </b></p>
    <p class="homeFirstElement fs-1 rounded"></p>
-   <div class="fs-2 fw-bolder text-center text-uppercase" >
-      <i class="fa-solid fa-down-long text-success fs-1"></i> 
-      <span style="color: goldenrod;">My Life Motto</span>
-      <i class="fa-solid fa-down-long text-success fs-1"></i>
    </div>
-</div>
+   </div>
+   <div class="mt-2 pt-5 text-center pb-5" style="background-color: rgba(0, 0, 0, 0.978);">
+    <p class="text-white fs-1 fw-bolder">
+      Dig into my Universe
+    </p>
+   <div class="fs-2 fw-bolder text-center text-uppercase" >
+      <i class="motto-arrow fa-solid fa-down-long text-white fs-1"></i> 
+      <span style="color: goldenrod;">My Life Motto</span>
+      <i class="motto-arrow fa-solid fa-down-long text-white fs-1"></i>
+   </div>
+
    <div class="Quotes">
-   <div class="QuotesLine mb-4" data-aos="fade-zoom-in" style=" transform: rotateZ(-10deg);">
+   <div id="QuotesLine1" class="QuotesLine1 mb-4" data-aos="fade-zoom-in">
       Never Give Up !
    </div>
-   <div class="QuotesLine mb-9" data-aos="fade-up" style=" transform: rotateZ(10deg);margin-bottom: 5% ;">
+   <div id="QuotesLine2" class="QuotesLine2 mb-9" data-aos="fade-up" style="margin-bottom: 5% ;">
       Face the <i>Fear</i> to kill the <i>Fear</i> !
    </div>
-   <div class="QuotesLine" data-aos="fade-right" style=" transform: rotateZ(-10deg);margin-bottom: 4% ;">
+   <div id="QuotesLine1" class="QuotesLine1" data-aos="fade-right" style="margin-bottom: 4% ;">
       Its not always what to <i> Learn</i> but how to <i>Learn</i> !
    </div>
-   <div class="QuotesLine" data-aos="fade-left" style=" transform: rotateZ(10deg);">
+   <div id="QuotesLine2" class="QuotesLine2" data-aos="fade-left" >
       Don't afraid of <i>Problems</i> !
    </div>
 </div>
+</div>
+
+<div class="main-project pb-5 pt-5 ps-5 pe-5">
+   <p class="text-center text-white fs-1 fw-bolder">
+      My Latest Projects
+    </p>
+    <div class=" d-flex flex-column w-100 pt-4 pb-4">
+      <div style="padding-top: 50px; padding-bottom: 100px;" class="project d-flex   w-100 justify-content-between">
+         <div class="w-50 align-self-center">
+            <img  class="project-img w-100 rounded" src="./ImgAsset/movie-mafia.png" alt="">
+         </div>
+        <div class="align-self-center" style="width: 35%;">
+         <p class="fs-4">
+            Excited to share my latest: a React.js powered movie website, integrating diverse
+            APIs for a dynamic experience. React Routes guide users through a cinematic journey,
+            while hooks like useState, useEffect enhance interactivity. With captivating carousels,
+            it’s a seamless blend of tech and art, offering immersive enlightenment.            
+         </p>
+         <p class="fs-5">
+         <b>KeySkills:- </b> ReactJs,Rest API,UseContext Hook,PostMan,BootStrap,CSS,HTML,Netlify,Project Architecture 
+         </p>
+         <div class="deploy-btn position-relative">
+            <div class="moving-moon1 rounded-circle position-absolute"></div>
+            <div class="moving-moon3 rounded-circle position-absolute"></div>
+            <div class="moving-moon2 rounded-circle position-absolute"></div>
+            <button class="btn go-btn rounded-pill ps-4 pe-4 pt-3 pb-3">
+               <a class="text-decoration-none text-white fs-5" target="_blank"  href="https://tranquil-starship-26fac6.netlify.app/">Deploy Link</a>
+               <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+         </div>
+        </div>
+      </div>
+      <div style="padding-top: 100px; padding-bottom: 100px;" class="project d-flex w-100 justify-content-between">
+        <div class="align-self-center" style="width: 35%;">
+         <p class="fs-4">
+            Developed a distinctive Todo MERN web application leveraging Express.js, React.js,
+            and MongoDB, featuring secure user authentication and authorization. This CRUD
+            application stands out in its user-centric design, providing a specialized and secure
+            task management solution.           
+         </p>
+         <p class="fs-5">
+         <b>KeySkills:- </b> ReactJs,NodeJs,ExpressJs,MongoDB(NoSQL),Rest API,PostMan,BootStrap,vercel,Clean Architecture,Authentication and Authorization
+         </p>
+         <div class="deploy-btn position-relative">
+            <div class="moving-moon3 rounded-circle position-absolute"></div>
+            <div class="moving-moon2 rounded-circle position-absolute"></div>
+            <div class="moving-moon1 rounded-circle position-absolute"></div>
+            <button class="btn go-btn rounded-pill ps-4 pe-4 pt-3 pb-3">
+               <a class="text-decoration-none text-white fs-5" target="_blank" href="https://career-book.vercel.app/">Deploy Link</a>
+               <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+         </div>
+        </div>
+        <div class="w-50 align-self-center">
+         <img  class="project-img w-100 rounded" src="./ImgAsset/E-diary.png" alt="">
+      </div>
+      </div>
+      <div style="padding-top: 100px; padding-bottom: 100px;" class="project d-flex w-100 justify-content-between">
+         <div class="w-50 align-self-center">
+            <img  class="project-img w-100 rounded" src="./ImgAsset/portfolio-2.jpg" alt="">
+         </div>
+        <div class="align-self-center" style="width: 35%;">
+         <p class="fs-4">
+            Explore more projects of me            
+         </p>
+         <div class="deploy-btn position-relative">
+            <div class="moving-moon1 rounded-circle position-absolute"></div>
+            <div class="moving-moon2 rounded-circle position-absolute"></div>
+            <div class="moving-moon3 rounded-circle position-absolute"></div>
+            <button class="btn go-btn rounded-pill ps-4 pe-4 pt-3 pb-3">
+               <a class="text-decoration-none text-white fs-5" target="_blank" href="/projects">Redirect to</a>
+               <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+         </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- <div class="life-style">
    <div style="font-size: larger;"><b>MY DAY TO DAY LIFESTYLE:-</b></div>
    <br>
    <div class="accordion mb-4" id="accordionExample">
@@ -116,6 +204,22 @@
    </div>
    <br>
    <br>
+</div> -->
+<!-- <div class="skills-section">
+<div class="d-flex justify-content-between align-items-center" style="height: 500px;">
+   <div>
+      <div>
+         <img class="h-25 w-25" src="https://www.kindpng.com/picc/m/318-3180598_skills-icon-png-transparent-png.png" alt="skillsimage">
+      </div>
+      <div>Explore All Skills</div>
+   </div>
+   <div>
+      <div>
+         
+      </div>
+   </div>
+</div>
+</div> -->
 
     <div id="footer-placeholder"></div>
 
@@ -141,7 +245,9 @@
     <script>
       AOS.init();
     </script>
-   
+   <script src="jsAsset/MyPortfolio.js">
+
+   </script>
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"></script>
