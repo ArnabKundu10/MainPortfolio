@@ -13,21 +13,21 @@ function NavButton(e) {
 }
 
 window.onscroll = function () {
-  myFunction();
+  myFunction1();
 };
-function myFunction() {
+function myFunction1() {
   const navItem = document.getElementById("NavContainer");
-  console.log(document.documentElement.scrollTop);
+  console.log(navItem);
+  // console.log(document.documentElement.scrollTop);
   if (
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
+    console.log("check<100");
     navItem.style.background =
       "linear-gradient(to right, rgba(120, 118, 118, 0.92), rgba(0, 0, 0, 0.863),rgba(120, 118, 118, 0.92))";
-  } else if (
-    document.body.scrollTop < 100 ||
-    document.documentElement.scrollTop < 100
-  ) {
+  } else {
+    console.log("check>100");
     navItem.style.background = "none";
     navItem.style.backgroundColor = "transparent";
   }

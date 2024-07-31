@@ -7,7 +7,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>My Portfolio</title>
+   <title>Arnab's Portfolio</title>
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -22,10 +22,16 @@
          position: relative;
          clear: both;
       }
+
    </style>
 </head>
 
 <body class="bg-dark p-2 text-white bg-opacity-80 ">
+   <div  class="video-background">
+      <video id="background-video" autoplay muted loop>
+          <source src="ImgAsset/bg.mp4" type="video/mp4">
+      </video>
+  </div>
    <div class="upArrow z-3 rounded-circle">
       <a class="upAnchor" href="#imported-content-placeholder"
         ><i class="fa-solid fa-arrow-up"></i
@@ -33,10 +39,15 @@
     </div>
    <!-- <iframe src="CommonFiles/header.html" width="100%" height="55vh" frameborder="0"></iframe> -->
    <div id="imported-content-placeholder"></div>
+
+
+<!-- start my details section************************************** -->
+
+
    <div class="my-details d-flex flex-column w-100 mt-5">
    <div class="w-100 d-flex justify-content-between align-items-center">
       <div class="background-line1 align-self-center"></div>
-   <div class="card" style="width: 50% !important;margin-top: 4% ;">
+   <div class="card" style="margin-top: 4% ;">
       <img src="ImgAsset/MyProfilePhoto.jpg" style="padding: 4px;" class="card-img-top" alt="image is not available">
       <div class="card-body">
          <h4 class="card-title" style="font-weight: bold;">ARNAB KUNDU</h5>
@@ -53,6 +64,12 @@
    <p class="homeFirstElement fs-1 rounded"></p>
    </div>
    </div>
+
+
+
+<!-- start motto section************************************** -->
+
+
    <div class="mt-2 pt-5 text-center pb-5" style="background-color: rgba(0, 0, 0, 0.978);">
     <p class="text-white fs-1 fw-bolder">
       Dig into my Universe
@@ -79,18 +96,168 @@
 </div>
 </div>
 
-<div class="main-project pb-5 pt-5 ps-5 pe-5">
-   <p class="text-center text-white fs-1 fw-bolder">
-      My Latest Projects
+
+
+
+<!-- start about section************************************** -->
+
+
+<div class="about pb-5 pt-5 ps-md-5 pe-md-5 ps-2 pe-2">
+   <div class="w-100 d-flex flex-column flex-md-row justify-content-center" data-aos="fade-up">
+   <p class="text-center text-white fs-1 fw-bolder me-2">
+      Early Career &  
+    </p>
+    <p class="from-right text-center text-white fs-1 fw-bolder" >
+      Profession 
+    </p>
+   </div>
+   <div style="padding-top: 50px; padding-bottom: 100px;" class="project border-0 d-flex flex-column flex-md-row   w-100 justify-content-between" data-aos="fade-up">
+      <div class="align-self-center text-center col-md-6 col-12 pb-5 pb-md-0 mb-4 mb-mod-0" data-aos="fade-right" >
+         <img  class="project-img-career col-md-6 col-8 rounded" style="height: 300px;" src="./ImgAsset/portfolio-1.webp" alt="">
+      </div>
+     <div class="align-self-center col-md-6 col-12">
+      <p class="fs-5 " style="text-align: justify;">
+         As an Information Technology student at Kalyani Government Engineering College, I specialize in front-end web development, particularly in React.js, JavaScript, and TypeScript. I've worked on projects like MovieMafia and eDiary, showcasing skills in React Routes and APIs. My programming knowledge includes C, C++, Java, and Golang, and I have experience with MySQL and MongoDB. I'm also proficient in Git, Tailwind CSS, and Bootstrap. My competitive coding achievements on LeetCode and GeeksForGeeks demonstrate my problem-solving skills and passion for learning. I'm keen to continue developing my skills and contributing to innovative web projects. 
+         Connect with me to discuss web development, programming challenges, or potential collaborations!            
+      </p>
+      <p class="fs-5 text-justify">
+         to know more about me go through the following link
+      </p>
+      <div class="deploy-btn position-relative">
+         <div class="moving-moon1 rounded-circle position-absolute"></div>
+         <div class="moving-moon3 rounded-circle position-absolute"></div>
+         <div class="moving-moon2 rounded-circle position-absolute"></div>
+         <button class="btn go-btn rounded-pill ps-4 pe-4 pt-3 pb-3">
+            <a class="text-decoration-none text-white fs-5" target="_blank"  href="/Career">Explore more About me</a>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+         </button>
+      </div>
+     </div>
+   </div>
+</div>
+
+
+
+<!-- start expertise and skills section************************************** -->
+
+
+
+<div class="expertise pt-5 ps-md-5 pe-md-5">
+   <div class="w-100 d-flex flex-column flex-md-row justify-content-center" data-aos="fade-up">
+      <p class="text-center text-white fs-1 fw-bolder me-2">
+         Unique Skillset Across  
+       </p>
+       <p class="from-right text-center text-white fs-1 fw-bolder" >
+         Various Expertises 
+       </p>
+      </div>
+      <div class="d-flex flex-column flex-md-row expert-icon-parent justify-content-between ps-md-5 pe-md-5 ms-md-5 me-md-5" data-aos="fade-up">
+         <div class="expert-icon-box m-2 m-md-0 d-flex flex-column p-2 text-center rounded">
+            <div class="expert-icon">
+               <i class="fa-solid fa-hourglass-start"></i>
+            </div>
+            <p class="fs-4 fw-bold">
+               Fast
+            </p>
+            <p class="fs-5">
+            Fast load times and lag free interaction, my highest priority.
+            </p>
+         </div>
+         <div class="expert-icon-box m-2 m-md-0 d-flex flex-column p-2 text-center rounded flex-wrap">
+            <div class="expert-icon">
+               <i class="fa-solid fa-brain"></i>
+            </div>
+            <p class="fs-4 fw-bold">
+               Intuitive
+            </p>
+            <p class="fs-5">
+              Strong preference for easy to use, intuitive UX/UI.
+            </p>
+         </div>
+         <div class="expert-icon-box m-2 m-md-0 d-flex flex-column p-2 text-center rounded">
+            <div class="expert-icon">
+               <i class="fa-solid fa-computer"></i>
+            </div>
+            <p class="fs-4 fw-bold">
+               Responsive
+            </p>
+            <p class="fs-5">
+               My layouts will work on any device, big or small.
+            </p>
+         </div>
+         <div class="expert-icon-box m-2 m-md-0 d-flex flex-column p-2 text-center rounded">
+            <div class="expert-icon">
+               <i class="fa-solid fa-bolt"></i>
+            </div>
+            <p class="fs-4 fw-bold">
+               Dynamic
+            </p>
+            <p class="fs-5">
+               Websites don't have to be static, I love making pages come to life.
+            </p>
+         </div>
+      </div>
+      <div class="text-center position-relative pt-5 mt-5">
+         <div class="skills-page position-absolute">
+            <button class="btn go-btn rounded-pill ps-4 pe-4 pt-3 pb-3">
+          <a class="text-decoration-none text-white" href="/Skills">Explore More</a>
+          <i class="fa-solid fa-rocket fs-2"></i>
+         </button>
+         </div>
+         <div id="circular" class="test position-absolute">
+            <i  class="fa-brands fa-react"></i>
+         </div>
+         <div id="circular" class="test2 position-absolute">
+            <i class="fa-brands fa-node"></i>
+         </div>
+         <div id="circular" class="test3 position-absolute">
+            <i class="fa-solid fa-database"></i>
+         </div>
+         <div id="circular" class="test4 position-absolute">
+            <i class="fa-brands fa-css3-alt"></i>
+         </div>
+         <div id="circular" class="test5 position-absolute">
+            <i class="fa-brands fa-html5"></i>
+         </div>
+         <div id="circular" class="test6 position-absolute">
+            <i class="fa-brands fa-js"></i>
+         </div>
+         <div id="circular" class="test7 position-absolute">
+            <i class="fa-brands fa-golang"></i>
+         </div>
+         <div id="circular" class="test8 position-absolute">
+            <i class="fa-brands fa-java"></i>
+         </div>
+         <div id="circular" class="test9 position-absolute">
+            <i class="fa-brands fa-bootstrap"></i>
+         </div>
+         <div id="circular" class="test10 position-absolute">
+            <i class="fa-brands fa-github"></i>
+         </div>
+          
+         <div class="meditate text-center" >
+            <img style="width: 35%;" src="ImgAsset/portfolio-meditation.png" alt="">
+         </div>
+      </div>
+</div>
+
+
+
+<!-- start projects section************************************** -->
+
+
+
+<div class="main-project pb-5 pt-5 ps-md-5 pe-md-5 ps-1 pe-1">
+   <p class="text-center text-white fs-1 fw-bolder">  My Latest Projects
     </p>
     <div class=" d-flex flex-column w-100 pt-4 pb-4">
-      <div style="padding-top: 50px; padding-bottom: 100px;" class="project d-flex   w-100 justify-content-between">
-         <div class="w-50 align-self-center">
+      <div style="padding-top: 50px; padding-bottom: 100px;" class="project d-flex flex-column flex-md-row w-100 justify-content-between">
+         <div class="col-md-6 col-12 align-self-center mb-4 mb-md-0">
             <img  class="project-img w-100 rounded" src="./ImgAsset/movie-mafia.png" alt="">
          </div>
-        <div class="align-self-center" style="width: 35%;">
+        <div class="align-self-center col-md-4 col-12">
          <p class="fs-4">
-            Excited to share my latest: a React.js powered movie website, integrating diverse
+            Excited to sha id="circular"re my latest: a React.js powered movie website, integrating diverse
             APIs for a dynamic experience. React Routes guide users through a cinematic journey,
             while hooks like useState, useEffect enhance interactivity. With captivating carousels,
             it’s a seamless blend of tech and art, offering immersive enlightenment.            
@@ -109,8 +276,8 @@
          </div>
         </div>
       </div>
-      <div style="padding-top: 100px; padding-bottom: 100px;" class="project d-flex w-100 justify-content-between">
-        <div class="align-self-center" style="width: 35%;">
+      <div style="padding-top: 100px; padding-bottom: 100px;" class="project d-flex flex-column-reverse flex-md-row w-100 justify-content-between" >
+        <div class="align-self-center col-md-4 col-12">
          <p class="fs-4">
             Developed a distinctive Todo MERN web application leveraging Express.js, React.js,
             and MongoDB, featuring secure user authentication and authorization. This CRUD
@@ -130,16 +297,16 @@
             </button>
          </div>
         </div>
-        <div class="w-50 align-self-center">
+        <div class="col-md-6 col-12 align-self-center mb-4 mb-md-0">
          <img  class="project-img w-100 rounded" src="./ImgAsset/E-diary.png" alt="">
       </div>
       </div>
-      <div style="padding-top: 100px; padding-bottom: 100px;" class="project d-flex w-100 justify-content-between">
-         <div class="w-50 align-self-center">
+      <div style="padding-top: 100px; padding-bottom: 100px;" class="project flex-column flex-md-row d-flex w-100 justify-content-between">
+         <div class="col-md-6 col-12 align-self-center">
             <img  class="project-img w-100 rounded" src="./ImgAsset/portfolio-2.jpg" alt="">
          </div>
-        <div class="align-self-center" style="width: 35%;">
-         <p class="fs-4">
+        <div class="align-self-center col-md-4 col-12">
+         <p class="fs-4 ">
             Explore more projects of me            
          </p>
          <div class="deploy-btn position-relative">
@@ -155,6 +322,7 @@
       </div>
     </div>
 </div>
+
 <!-- <div class="life-style">
    <div style="font-size: larger;"><b>MY DAY TO DAY LIFESTYLE:-</b></div>
    <br>

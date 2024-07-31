@@ -43,7 +43,7 @@ app.post("/index", async (req, res) => {
     const data = await messageData
       .save()
       .then(() => {
-        res.status(201).json({ message: "user registered successfully" });
+        res.status(201).json({ message: "Data successfully posted" });
         console.log("data successfully posted");
       })
       .catch((error) => {
