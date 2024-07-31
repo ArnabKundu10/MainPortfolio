@@ -1,6 +1,20 @@
 body{
    overflow-x: hidden !important;
-  
+}
+.video-background {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   z-index: -1;
+}
+
+.video-background video {
+   width: 100%;
+   height: 100%;
+   object-fit: cover; /* Ensure video covers the entire container */
 }
 .headerLogo{
    height: 60px;
@@ -8,12 +22,40 @@ body{
    margin-top: -16px !important;
    margin-bottom: -16px;
 }
-.card {
-   position: relative;
-   float: right;
-   width: 20% !important;
+.my-details{
+   overflow: hidden !important;
 }
+.card {
+   /* position: relative; */
+   /* float: right; */
+   width: 20% !important;
+   animation: 4s linear 1s infinite alternate slidein;
+}
+.background-line1{
 
+   height: 40px;
+   margin-top: 250px;
+   margin-right: -5%;
+   margin-left: -5%;
+   z-index: -1;
+   width: 80%;
+   border-top: 10px solid rgb(248, 180, 9);
+   border-bottom: 10px solid rgb(248, 180, 9);
+   transform: rotate(15deg);
+   animation: 4s linear 1s infinite alternate slideline1;
+}
+.background-line2{
+   height: 40px;
+   margin-left: -5%;
+   margin-right: -5%;
+   margin-top: 250px;
+   z-index: -1;
+   width: 80%;
+   border-top: 10px solid rgb(248, 180, 9);
+   border-bottom: 10px solid rgb(248, 180, 9);
+   transform: rotate(-15deg);
+   animation: 4s linear 1s infinite alternate slideline2;
+}
 .linkedin {
    border-radius: 5px;
 }
@@ -28,17 +70,18 @@ body{
 
 #myskills:hover {
    scale: 1.1;
-   color: rgba(6, 111, 6, 0.775) !important;
+   color: white !important;
 }
 
 #myskills:visited {
-   color: rgba(47, 255, 64, 0.953)
+   color: white;
 }
 
 #foot {
    display: flex;
    flex-direction: column;
    background-image: url(../ImgAsset/footer_msg_main.jpg);
+   filter: grayscale(60%);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
@@ -72,6 +115,9 @@ body{
    font-size: 150%;
    
 }
+.motto-arrow{
+   animation: 2s linear 1s infinite alternate slidein;
+}
 .Quotes{
    margin-top: 5%;
    display: flex;
@@ -82,8 +128,8 @@ body{
    overflow-x: hidden;
    overflow-y: hidden;
 }
-.QuotesLine{
-   background-color: green;
+.QuotesLine1,.QuotesLine2{
+   background-color: transparent;
    margin: 1%;
    padding: 0.5%;
    font-size: 250%;
@@ -91,14 +137,14 @@ body{
    opacity: 300%;
    border: 2px solid  goldenrod;
    border-radius: 14%;
-   transform: rotateZ(-10deg);
+   /* transform: rotateZ(-10deg); */
 }
 .homeFirstElement::after{
    content: "Quick Learning";
    font-weight: bolder;
    border: 2px solid goldenrod;
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   color: rgba(19, 191, 19, 0.715);
+   color: white;
    animation: textchange 30s linear .2s infinite;
    
 }
@@ -208,8 +254,8 @@ body{
    /* 3vw */
 }
 .activeHead{
-   border-top: 2px solid rgba(19, 191, 19, 0.715);
-   border-bottom: 2px solid rgba(19, 191, 19, 0.715);
+   border-top: 2px solid white;
+   border-bottom: 2px solid white;
    border-left: 1px solid rgba(245, 245, 245, 0.621);
 }
 .ul-nav{
@@ -231,7 +277,8 @@ body{
         margin-left: -7px;
         width: 100%;
         line-height: 1;
-        background: linear-gradient(to right, rgba(120, 118, 118, 0.92), rgba(0, 0, 0, 0.863),rgba(120, 118, 118, 0.92));
+        /* background-color: transparent; */
+        /* background: linear-gradient(to right, rgba(120, 118, 118, 0.92), rgba(0, 0, 0, 0.863),rgba(120, 118, 118, 0.92)); */
         /* background-color: rgba(120, 118, 118, 0.92) !important; */
         overflow-x: hidden !important;
 }
@@ -252,6 +299,7 @@ body{
 }
 .NavBtn{
    width: 60px;
+   display: none;
    border-color: goldenrod;
    margin-top: -9px;
    margin-bottom: -7px;
@@ -265,6 +313,182 @@ body{
 #ItemColumn{
    animation: 0.2s linear 0s 1 normal SlideNav;
 }
+.go-btn{
+   border: 1px solid rgb(248, 180, 9) !important;
+   font-weight: bolder;
+   background-color:rgb(248, 180, 9) !important;
+   color: black;
+   transition: all 1s ease-out;
+}
+.go-btn:hover{
+   background-color:black !important;
+   color: rgb(248, 180, 9) !important;
+   animation: 1s linear 1s 1 forwards btnslide;
+}
+.deploy-btn:hover .moving-moon{
+   animation: 4s linear 1s infinite forwards move;
+} 
+.project{
+   border-bottom: 2px solid transparent;
+   border-image: linear-gradient(to right,transparent,rgb(248, 180, 9),transparent)1;
+}
+.project-img{
+   transition:all 0.8s ease-in-out;
+}
+.project-img:hover{
+filter: grayscale(90%);
+scale: 1.1;
+}
+.moving-moon1{
+   height: 15px;
+   width: 15px;
+   top:20px;
+   left: 20px;
+   z-index: -1;
+   background-color: rgba(128, 128, 128, 0.933);
+   animation: 4s linear 1s infinite forwards move;
+}
+.moving-moon2{
+   height: 5px;
+   width: 5px;
+   top:5px;
+   left: 5px;
+   z-index: -1;
+   background-color: rgba(128, 128, 128, 0.933);
+   animation: 4s linear 1s infinite forwards move1;
+}
+.moving-moon3{
+   height: 10px;
+   width: 10px;
+   top:30px;
+   left: 30px;
+   z-index: -1;
+   background-color: rgba(128, 128, 128, 0.933);
+   animation: 4s linear 1s infinite forwards move2;
+}
+.main-project,.about{
+   overflow: hidden;
+}
+.from-right{
+   transform: translateX(100%) rotate(-45deg);
+   opacity: 0;
+   transition: transform 1s ease-out, opacity 1s ease-out;
+}
+.visible{
+   transform: translateX(0%) rotate(0deg);
+   opacity: 1;
+   
+}
+.project-img-career{
+  filter: grayscale(200%);
+  filter: brightness(-20%); 
+  filter: blur(25px);
+  filter: drop-shadow(16px 16px 20px rgb(248, 180, 9));
+  transform: rotate(50deg);
+  animation: 4s linear 1s infinite forwards imgRotator;
+}
+.expertise{
+overflow: hidden;
+padding-bottom: 300px;
+}
+.expert-icon-parent{
+   margin-top: 100px;
+}
+.expert-icon-box{
+   border: 2px solid rgb(248, 180, 9);
+   width: 20%;
+}
+.expert-icon{
+   color: rgb(248, 180, 9);
+   font-size: 6rem;
+}
+.skills-page{
+   top: 230px;
+   left: 45.8%;
+   z-index: 2;
+   width: 10%;
+}
+.test,.test2,.test3,.test4,.test5,.test6,.test7,.test8,.test9,.test10{
+   color: rgb(248, 180, 9);
+   left: 48%;
+   top: 240px;
+   font-size: 5vw;
+   visibility: hidden;
+   transform: rotate(0deg) translateX(300px) rotate(0deg);
+   animation: 5s linear infinite forwards iconMove2;
+   animation-play-state: running;
+}
+/* .circular-move{
+   animation: 5s linear infinite forwards iconMove2;
+   animation-play-state: running;
+} */
+.test{
+   animation-delay: 0.5s;
+}
+.test2{
+   animation-delay: 1s;
+}
+.test3{
+   animation-delay: 1.5s;
+}
+.test4{
+   animation-delay: 2s;
+}
+
+.test5{
+   animation-delay: 2.5s;
+}
+.test6{
+   animation-delay: 3s;
+}
+
+.test7{
+   animation-delay: 3.5s;
+}
+.test8{
+   animation-delay: 4s;
+}
+
+.test9{
+   animation-delay: 4.5s;
+}
+.test10{
+   animation-delay: 5s;
+}
+
+
+.meditate{
+   filter: drop-shadow(16px 16px 20px rgb(248, 180, 9));
+   animation: 4s linear 1s infinite alternate slidein;
+}
+.same-hover{
+   transition: all ease-out 0.5s;
+}
+.same-hover:hover{
+color: rgb(248, 180, 9) !important;
+}
+.card{
+   width: 50% !important;
+}
+@media screen and (min-width:735px){
+   .width-36{
+      width: 36% !important;
+   }
+}
+
+@media screen and (max-width:735px) {
+   .expert-icon-box{
+      border: 2px solid rgb(248, 180, 9);
+      width: 90%;
+   }
+   .card{
+      width: 75% !important;
+      left: 0%;
+   }
+   .background-line1,.background-line2{
+      width: 29%;
+   }
+}
 @keyframes SlideNav {
    0%{
       transform: translateY(-100%);
@@ -272,4 +496,115 @@ body{
    100%{
       transform: translateY(0%); 
    }
+}
+
+@keyframes slidein {
+   0%{
+      transform: translateY(-10px);
+   }
+   100%{
+      transform: translateY(10px);
+   }
+}
+@keyframes slideline1 {
+   0%{
+      transform: rotate(15deg);
+   }
+   100%{
+      transform: rotate(20deg);
+   }
+}
+@keyframes slideline2 {
+   0%{
+      transform: rotate(-15deg);
+   }
+   100%{
+      transform: rotate(-20deg);
+   }
+}
+@keyframes rotateMotto1 {
+   0%{
+      transform: rotate(10deg);
+   }
+   100%{
+      transform: rotate(-10deg);
+   }
+}
+@keyframes rotateMotto2 {
+   0%{
+      transform: rotate(-10deg);
+   }
+   100%{
+      transform: rotate(10deg);
+   }
+}
+@keyframes btnslide {
+   0%{
+      background-color: none;
+      background: linear-gradient(to right, goldenrod,white) !important;
+   }
+   100%{
+      background-color: none;
+      background: linear-gradient(to right,white, goldenrod) !important;
+   }
+}
+@keyframes move {
+   0% {
+      transform: translate(-5%, -50%) rotate(0deg) translateX(50px);
+  }
+  100% {
+      transform: translate(-5%, -50%) rotate(360deg) translateX(50px);
+  }
+}
+@keyframes move1 {
+   0% {
+      transform: translate(-100%, -50%) rotate(0deg) translateX(50px);
+  }
+  100% {
+      transform: translate(-100%, -50%) rotate(360deg) translateX(20px);
+  }
+}
+@keyframes move2 {
+   0% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(50px);
+  }
+  100% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(100px);
+  }
+}
+@keyframes slideFromRight {
+   0% {
+   transform: translateX(300px) rotate(-45deg);
+  }
+  100% {
+   transform: translateX(0px) rotate(0deg);
+  }
+}
+@keyframes imgRotator {
+   0% {
+   transform: rotateY(0deg) rotate(45deg);
+  }
+  100% {
+   transform: rotateY(365deg) rotate(45deg);
+  }
+}
+/* @keyframes iconMove {
+   0% {
+      transform: translate(250%, 250%) rotate(0deg) translateX(300px);
+  }
+  
+  100% {
+      transform: translate(250%, 250%) rotate(360deg) translateX(300px);
+  }
+} */
+@keyframes iconMove2 {
+   0% {
+      visibility:visible;
+      transform: rotate(0deg) translateX(300px) rotate(0deg);
+  }
+  
+  100% {
+   visibility:visible;
+      transform: rotate(360deg) translateX(300px) rotate(-360deg);
+  }
 }
