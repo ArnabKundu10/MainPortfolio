@@ -418,6 +418,7 @@ padding-bottom: 300px;
    animation: 5s linear infinite forwards iconMove2;
    animation-play-state: running;
 }
+
 /* .circular-move{
    animation: 5s linear infinite forwards iconMove2;
    animation-play-state: running;
@@ -477,6 +478,17 @@ color: rgb(248, 180, 9) !important;
 }
 
 @media screen and (max-width:735px) {
+   .skills-page{
+      left: 36%;
+      z-index: 2;
+      width: 0%;
+   }
+   .meditate{
+      padding-top: 80px;
+   }
+   .test,.test2,.test3,.test4,.test5,.test6,.test7,.test8,.test9,.test10{
+      font-size: 3.5rem;
+   }
    .expert-icon-box{
       border: 2px solid rgb(248, 180, 9);
       width: 90%;
