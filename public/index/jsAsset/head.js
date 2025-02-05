@@ -1,8 +1,3 @@
-/* function func1(e) {
-  e.preventDefault();
-
-  console.log(e);
-} */
 function NavButton(e) {
   const itemColumn = document.getElementById("ItemColumn");
   if (itemColumn.style.display === "none") {
@@ -17,8 +12,6 @@ window.onscroll = function () {
 };
 function myFunction1() {
   const navItem = document.getElementById("NavContainer");
-  console.log(navItem);
-  // console.log(document.documentElement.scrollTop);
   if (
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100

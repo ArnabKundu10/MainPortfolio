@@ -1,0 +1,15 @@
+{
+   "version": 2,
+   "builds": [
+       {
+           "src": "JsAsset/backend_Src/index.js",
+           "use": "@vercel/node"
+       }
+   ],
+   "routes": [
+       {
+           "src": "/(.*)",
+           "dest": "JsAsset/backend_Src/index.js"
+       }
+   ]
+}
